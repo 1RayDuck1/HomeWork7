@@ -112,7 +112,7 @@ FindArrayNumber(myArray);
 
 //Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
-/*
+
 double[,] CreateRandom2dArray()
 {
     Console.Write("Введите количество столбцов: ");
@@ -150,7 +150,7 @@ void Show2dArray(double[,] array)
     Console.WriteLine();
 }
 
-double[] FindNumber(double[,] array)
+double[] FindArithmeticMean(double[,] array) 
 {
     double[] newArray = new double[array.GetLength(0)];
     int index = 0;
@@ -180,6 +180,5 @@ void ShowArray(double[] array)
 
 double[,] myArray = CreateRandom2dArray();
 Show2dArray(myArray);
-double[] newArray = FindNumber(myArray);
+double[] newArray = FindArithmeticMean(myArray);
 ShowArray(newArray);
-*/
