@@ -163,6 +163,7 @@ double[] FindArithmeticMean(double[,] array)
             empty += array[i, j];
         }
         newArray[index] = empty / array.GetLength(0);
+        newArray[index] = Math.Round(newArray[index], 2);
         index++;
     }
     return newArray;
